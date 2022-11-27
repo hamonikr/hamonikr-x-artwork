@@ -1,0 +1,14 @@
+#!/bin/sh
+
+set -e
+
+case "$1" in
+    remove)
+	if update-alternatives --query newt-palette | grep -qs "Value: /etc/newt/palette.original"; then
+		update-alternatives --auto newt-palette
+	fi
+	;;
+esac
+
+#DEBHELPER#
+exit 0

@@ -1,0 +1,16 @@
+[SddmGreeterTheme]
+Name=hamonikr-x
+Description=Theme for SDDM
+Author=Kevin Kim
+Copyright=Copyright (C) 2022 HamoniKR <pkg@hamonikr.org> 
+License=GPL-2.0
+Type=sddm-theme
+Version=1.6
+Website=https://github.com/hamonikr/hamonikr-ddm
+Screenshot=Previews/screenshot.png
+MainScript=Main.qml
+ConfigFile=theme.conf
+TranslationsDirectory=translations
+Email=pkg@hamonikr.org
+Theme-Id=hamonikr
+Theme-API=2.11

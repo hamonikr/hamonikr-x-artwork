@@ -1,0 +1,20 @@
+#!/bin/sh
+
+set -e
+
+case "$1" in
+    configure)
+	# Lubuntu prefers legacy newt colors over Aubergine by default
+	if update-alternatives --query newt-palette | grep -qs "Status: auto"; then
+		update-alternatives --set newt-palette /etc/newt/palette.original
+	fi
+
+	if which update-icon-caches >/dev/null 2>&1 ; then
+		update-icon-caches /usr/share/icons
+	fi
+
+	;;
+esac
+
+#DEBHELPER#
+exit 0

@@ -1,0 +1,48 @@
+Source: hamonikr-x-artwork
+Section: x11
+Priority: optional
+Maintainer: HamoniKR <pkg@hamonikr.org> 
+Build-Depends: debhelper-compat (= 12), icon-naming-utils, intltool
+Standards-Version: 4.5.0
+Homepage: https://hamonikr.org
+Vcs-Browser: https://github.com/hamonikr/hamonikr-x-artwork
+Vcs-Git: https://github.com/hamonikr/hamonikr-x-artwork.git
+Rules-Requires-Root: no
+
+Package: hamonikr-x-artwork
+Architecture: all
+Depends: ${misc:Depends}
+Conflicts: 
+Replaces: 
+Provides: 
+Description: artwork for HamoniKR-X
+ Artwork for HamoniKR-X which contains the default wallpaper and default theming.
+
+Package: plymouth-theme-hx
+Architecture: all
+Depends: plymouth (>= 0.9.2-3ubuntu1~),
+         plymouth-label,
+         ${misc:Depends}
+Provides: plymouth-theme
+Replaces: plymouth (<< 0.8.1-1~)
+Conflicts: 
+Description: plymouth theme for HamoniKR-X
+ This package contains a HamoniKR-X theme for Plymouth, which displays the
+ logo on boot.
+
+Package: sddm-theme-hx
+Architecture: all
+Depends: ${misc:Depends}
+Recommends: sddm
+Conflicts: 
+Replaces: 
+Provides: 
+Description: The theme of SDDM X11 display manager
+ HamoniKR-X chooser theme for SDDM
+
+Package: grub-theme-hx
+Architecture: all
+Depends: ${misc:Depends}
+Recommends: grub2
+Description: Theme for HamoniKR-X grub screen
+ Custom grub theme for HamoniKR-X.
