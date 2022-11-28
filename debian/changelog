@@ -1,3 +1,10 @@
+hamonikr-x-artwork (6.1.0) taebaek; urgency=medium
+
+  * Changed grub theme location
+   - inside /usr/share/grub/theme
+
+ -- HamoniKR <pkg@hamonikr.org>  Mon, 28 Nov 2022 12:17:48 +0900
+
 hamonikr-x-artwork (6.0.6) taebaek; urgency=medium
 
   * Release for HamoniKR-X.
