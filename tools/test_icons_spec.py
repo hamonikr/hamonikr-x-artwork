@@ -402,10 +402,10 @@ list_name = [
 list_result = []
 list_missing = []
 
-list_directories = os.listdir("../src/usr/share/icons/HamoniKR") 
+list_directories = os.listdir("../src/usr/share/icons/hamonikr-x") 
 
 for file_name in list_name:
-    for root, dirs, files in os.walk("../src/usr/share/icons/HamoniKR") :
+    for root, dirs, files in os.walk("../src/usr/share/icons/hamonikr-x") :
             for f in files:
                 if os.path.splitext(f)[0] == file_name:
                     list_result.append(file_name)

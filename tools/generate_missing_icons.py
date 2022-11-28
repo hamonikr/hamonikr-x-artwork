@@ -457,7 +457,7 @@ for icon in list_icons:
         # 1 folder by theme
         destination_path = os.path.join(destination_prefix,"imported-" + theme_name,size_location)
 
-        if theme_name != "HamoniKR":
+        if theme_name != "hamonikr-x":
             if theme_name != "icons":
                 if theme_name != "hicolor":
                     if theme_name != "share":
