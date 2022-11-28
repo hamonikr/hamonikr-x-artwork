@@ -4,7 +4,7 @@ case "$1" in
     configure)
 	update-alternatives \
 		--install /usr/share/plymouth/themes/default.plymouth default.plymouth \
-		/usr/share/plymouth/themes/hamonikr-x/hamonikr-x.plymouth 150
+		/usr/share/plymouth/themes/hamonikr-x/hamonikr-x.plymouth 500
 
 	if which update-initramfs >/dev/null 2>&1
 	then
