@@ -75,7 +75,8 @@ fi
 
 if which systemctl >/dev/null 2>&1
 then
-    if [ $(systemctl is-enabled hamonikr-system) = "disabled" ] ; then
+    if [ "$(dpkg-query -W --showformat='${db:Status-Status}' hamonikr-system 2>&1)" = "installed" ] && \
+     [ $(systemctl is-enabled hamonikr-system) = "disabled" ] ; then
       systemctl enable hamonikr-system.service
       systemctl daemon-reload
     fi
