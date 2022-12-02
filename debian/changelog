@@ -1,3 +1,10 @@
+hamonikr-x-artwork (6.1.1) unstable; urgency=medium
+
+  * Relase for HamoniKR hx
+   - Build on LDME 5 i386
+
+ -- HamoniKR <pkg@hamonikr.org>  Fri, 02 Dec 2022 14:13:46 +0900
+
 hamonikr-x-artwork (6.1.0) taebaek; urgency=medium
 
   * Changed grub theme location
